@@ -10,12 +10,12 @@ Our project aims to focus on using different techniques to discover brain cancer
 
 The project utilizes a dataset of brain MRI scans, divided into two classes: "tumor" and "no tumor." The images were preprocessed to enhance the features relevant to tumor detection.
 
-* Dataset Source: [Dataset]
-* Number of Images: [Total number of images in the dataset](https://drive.google.com/drive/folders/1LPJI-kJ6TbWDZvHf0U5nDVgks1afinaa)
-* Preprocessing Steps: 
-    * Image resizing to a uniform size.
-    * Normalization of pixel values to a specific range.
-    * Data augmentation techniques (rotation, flipping, brightness adjustments) to increase the dataset size and improve model robustness.
+* Dataset Source: [Dataset](https://drive.google.com/drive/folders/1LPJI-kJ6TbWDZvHf0U5nDVgks1afinaa)
+* Preprocessing Steps: To enhance model performance, the dataset is preprocessed using techniques such as:
+*  **Rescaling:** Pixel values are normalized to a range of 0-1.
+* **Grayscaling:** Images are converted to grayscale to reduce complexity.
+* **Data Augmentation:**  The training dataset is augmented using techniques like rotation, shifting, and flipping to increase its size and variability. This helps the model generalize unseen data better.
+
 
 
 ## Methodology
@@ -59,10 +59,10 @@ Based on our model, we can predict whether a subject has a brain tumor or not. T
 
 ## Usage
 
-1.  Clone the repository.
-2.  Install the required dependencies: `pip install -r requirements.txt`.
-3.  Run the code: `python main.py`.
-
+1.  Clone this repository to your local machine.
+2.  Install the required libraries: `pip install tensorflow keras pandas numpy matplotlib seaborn scikit-learn pillow opencv-python`
+3.  Mount your Google Drive to access the dataset:  Refer to the 'PATH PROCESS' section in the notebook for instructions on mounting Google Drive and setting the dataset paths.
+4.  Run the Jupyter notebook or the Collab to train and evaluate the model.
 ## Contributing
 
 Contributions are welcome! Please follow the guidelines outlined in [CONTRIBUTING.md].
